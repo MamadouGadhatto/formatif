@@ -5,9 +5,11 @@ public class Product
 {
     public int Id { get; set; }
     public string Name { get; set; }
+    public string Description { get; set; }
 }
 
 [Route("api/[controller]")]
+[Produces("application/json")]
 [ApiController]
 public class ProductsController : ControllerBase
 {
@@ -24,5 +26,39 @@ public class ProductsController : ControllerBase
         return Ok(products);
     }
 
+    [HttpGet("{id}")]
+    public ActionResult<IEnumerable<Product>> GetById(int id)
+    {
+         var product = products.Find(x => x.Id == id);
+        return product == null? NotFound() :Ok(products);
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult Delete(long id)
+    {
+       var product = products.Find(x => x.Id==id);
+        if(product == null)
+        {
+            return NotFound();
+        }
+
+        return NotFound();
+    }
+    
+    [HttpPost]
+    [ProducesResponseType(StatusCodes.Status201Created)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public IActionResult Post([FromBody] Product product)
+    {
+        var newProduct = new Product
+        {
+            Id = products.Select(x => x.Id).Max() +1,
+            Name = product.Name,
+            Description = product.Description
+        };
+
+
+        return NoContent();
+    }
 }
 
