@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Web2.API</name>
+    </assembly>
+    <members>
+        <member name="M:ProductsController.Get">
+            <summary>
+            Obtenir la liste des produits enregistrés.
+            </summary>
+            <returns>The list of registered products.</returns>
+            <response code="200">Returns the list of registered products</response>
+        </member>
+        <member name="M:ProductsController.GetById(System.Int32)">
+            <summary>
+            Obtenir les détails d'un produit à partir de son ID.
+            </summary>
+            <param name="id">ID du produit à récupérer.</param>
+            <returns>Les détails du produit spécifié.</returns>
+            <response code="200">Retourne les détails du produit.</response>
+            <response code="404">Si le produit avec l'ID spécifié n'est pas trouvé.</response>
+        </member>
+        <member name="M:ProductsController.Delete(System.Int64)">
+            <summary>
+            supprime un produit a partir de son Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProductsController.Post(Product)">
+             <summary>
+             Permet d'ajouter un produit.
+             </summary>
+             <param name="item"></param>
+             <returns>A newly created TodoItem</returns>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "name": "Item #1",
+                    "isComplete": true
+                 }
+            
+             </remarks>
+             <response code="201">Returns the newly created item</response>
+             <response code="400">If the item is null</response>
+        </member>
+    </members>
+</doc>

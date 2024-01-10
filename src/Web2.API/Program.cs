@@ -6,18 +6,23 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
+var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+
 builder.Services.AddSwaggerGen(options =>
 {
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "Product API",
-        Description = "An ASP.NET Core Web API for managing WebAPI items",
+        Title = "Web2 API",
+        Description = "An ASP.NET Core Web API for managing Web2API items",
         TermsOfService = new Uri("https://example.com/terms"),
         Contact = new OpenApiContact
         {
             Name = "Mamadou",
-            Url = new Uri("https://example.com/contact")
+            Url = new Uri("https://example.com/contact"),
+            
         },
         License = new OpenApiLicense
         {
@@ -25,13 +30,12 @@ builder.Services.AddSwaggerGen(options =>
             Url = new Uri("https://example.com/license")
         }
     });
-    //var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-    //options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
 
 
-var app = builder.Build();
 
+var app = builder.Build();
+app.UseStaticFiles();
 app.MapControllers();
 app.UseSwagger(options =>
 {
@@ -39,6 +43,7 @@ app.UseSwagger(options =>
 });
 app.UseSwaggerUI(options =>
 {
+    options.InjectStylesheet("/swagger-ui/custom.css");
     options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
     options.RoutePrefix = string.Empty;
 });
