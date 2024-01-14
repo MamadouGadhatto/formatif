@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BAH Mamadou\\formatif\\src\\Web2.API\\Web2.API.csproj": {}
+    "C:\\Hiver2024\\Programmation Web 4\\formatif\\src\\Web2.API\\Web2.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BAH Mamadou\\formatif\\src\\Web2.API\\Web2.API.csproj": {
+    "C:\\Hiver2024\\Programmation Web 4\\formatif\\src\\Web2.API\\Web2.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BAH Mamadou\\formatif\\src\\Web2.API\\Web2.API.csproj",
+        "projectUniqueName": "C:\\Hiver2024\\Programmation Web 4\\formatif\\src\\Web2.API\\Web2.API.csproj",
         "projectName": "Web2.API",
-        "projectPath": "C:\\Users\\BAH Mamadou\\formatif\\src\\Web2.API\\Web2.API.csproj",
+        "projectPath": "C:\\Hiver2024\\Programmation Web 4\\formatif\\src\\Web2.API\\Web2.API.csproj",
         "packagesPath": "C:\\Users\\BAH Mamadou\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BAH Mamadou\\formatif\\src\\Web2.API\\obj\\",
+        "outputPath": "C:\\Hiver2024\\Programmation Web 4\\formatif\\src\\Web2.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "NuGet.Protocol": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"

@@ -48,3 +48,11 @@ C:\Users\BAH Mamadou\formatif\src\Web2.API\obj\Debug\net6.0\Web2.API.MvcApplicat
 C:\Users\BAH Mamadou\formatif\src\Web2.API\obj\Debug\net6.0\Web2.API.csproj.CopyComplete
 C:\Users\BAH Mamadou\formatif\src\Web2.API\bin\Debug\net6.0\Web2.API.xml
 C:\Users\BAH Mamadou\formatif\src\Web2.API\obj\Debug\net6.0\Web2.API.xml
+C:\Hiver2024\Programmation Web 4\formatif\src\Web2.API\bin\Debug\net6.0\Web2.API.xml
+C:\Hiver2024\Programmation Web 4\formatif\src\Web2.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Hiver2024\Programmation Web 4\formatif\src\Web2.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Hiver2024\Programmation Web 4\formatif\src\Web2.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Hiver2024\Programmation Web 4\formatif\src\Web2.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Hiver2024\Programmation Web 4\formatif\src\Web2.API\obj\Debug\net6.0\Web2.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Hiver2024\Programmation Web 4\formatif\src\Web2.API\obj\Debug\net6.0\Web2.API.csproj.CopyComplete
+C:\Hiver2024\Programmation Web 4\formatif\src\Web2.API\obj\Debug\net6.0\Web2.API.xml
